@@ -1,0 +1,115 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: linear-gradient(rgb(0,0,0,0.5),
+    rgb(0,0,0,0.5)), 
+    url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+h1{font-size: 3em;}
+h2{font-size: 2em;}
+p{font-size: 1.3em;}
+button{font-size: 1.4em;}
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.nav__enlaces .link{
+    list-style: none;
+}
+.nav__logo{
+    font-size: .8em;
+    display: none;
+    color: #a8e635;
+    text-shadow: 3px 3px 10px;
+}
+.nav__enlaces ul{
+    display: flex;
+    flex-direction: column;
+}
+.nav__enlaces li{
+    padding: 6px 0px;
+}
+.nav__enlaces a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(192, 190, 190);
+}
+.nav__enlaces a:hover{
+    color: rgb(202, 201, 201);
+}
+.characteres{
+    text-align: center;
+    margin-bottom: 0;
+}
+.characteres__introduction h2{
+    color: #a8e635;
+    text-shadow: 2px 2px 6px;
+}
+.characteres__rango i{
+    padding: 20px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px;
+}
+.characteres__buttons .button{
+    padding: 20px;
+    color: rgb(224, 219, 219);
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button--text-shadow{
+    background-color:#a8e635;
+    text-shadow: 2px 2px 10px black;
+}
+.button--background-transparent{
+    background: transparent;
+    border: 3px solid #a8e635;
+    text-shadow: 2px 2px 10px;
+
+}
+.characteres__buttons .button:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+@media (min-width:780px){
+    .nav__enlaces ul{
+        flex-direction: row;
+    }
+    .header__nav{
+        justify-content: space-around;
+    }
+    .nav__enlaces li{
+        padding: 0px 30px;
+    }
+    .characteres{
+        max-width: 740px;
+    }
+    .characteres__introduction h2{
+        font-size: 2.1em;
+    }
+    .characteres p{
+        text-align: start;
+        margin-left: 40px;
+    }
+}
+@media (min-width:980px){
+    body{
+        background-position: 0px .1px;
+    }
+    .nav__logo{
+        display: block;
+    }
+    .characteres__introduction h2{
+        font-size: 1.84em;
+    }
+}
+  
